@@ -1,44 +1,432 @@
-<!DOCTYPE html>
-<html>
-
+<!doctype html>
+<html lang="zh-CN">
 <head>
-    <meta charset="UTF-8">
-    <title>意腾迎双十一抽奖</title>
-    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/reset.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/layer.css">
-</head>
-<!--QQ/微信分享标题图--><div style="width:0px;height:0px;overflow:hidden;"><img src="https://tva1.sinaimg.cn/crop.0.0.976.976.50/006rUl0gjw8f4uuscl9p5j30r40r410i.jpg.png></div>
-<body>
-    <div class="main">
-        <div class="logo"></div>
-        <div class="turn1"></div>
-        <div class="cloud1"></div>
-        <div class="cloud2"></div>
-        <div class="cloud3"></div>
-        <a class="spe-a" href="javascript:;">活动规则</a>
-        <div class="circle">
-            <div class="circle1">
-                <img src="images/content.png">
-            </div>
-            <img src="images/circle.png" class="circle2">
-            <img src="images/lucky.png" class="circle3">
-        </div>
-        <div class="bc"></div>
-        <div class="share">
-            <img src="images/help-g.png" width="100%" height="100%">
-        </div>
-    </div>
-</body>
-<script type="text/javascript" src="js/jquery-1.8.2.min.js"></script>
-<script type="text/javascript" src="js/jquery.rotate.min.js"></script>
-<script type="text/javascript" src="js/layer.js"></script>
-<script type="text/javascript" src="js/lucky.js"></script>
+	<meta charset="UTF-8">
+	<title>澳洲OSHC学生保险</title>
+	<link rel="shortcut icon" href="img/favicon.ico" type="">
+	<link rel="stylesheet" href="animate.css">
+	<script src="jquery-1.7.2.min.js"></script>
+	<style>
+		*{margin:0;padding:0;}
+		
+		li{	
+			list-style:none;
+		}
+		
+		img{	
+			vertical-align:top;border:none;
+		}	
+		header{	
+			width: 100%;
+			height: 1000px;
+			background: #7ec9fe;
+		}
+		.center{	
+			width: 1336px;
+			height: 999px;
+			margin:0 auto;
+			background: url(img/banner.png) center no-repeat;
+			overflow: hidden;
+		}	
+		.box1{	
+			width: 1200px;
+			height: 442px;
+			margin:-245px auto;	
+			background: url(img/box1.png) no-repeat;
+			padding:10px;
+			overflow: hidden;
+		}
+		.allsafe{	
+		    width: 1178px;
+		    height: 442px;
+		    margin-top: 9px;
+		    margin-left: 12px;
+		}
+		.safe1,.safe2,.safe3,.safe4{	
+			background: #fff;
+			width: 288px;
+			height: 386px;
+			overflow: hidden;
+			float: left;
+			margin-right: 8px;
+		}
+		.safe4{	
+			margin-right: 0;
+		}
+		.safe_top{	
+			width: 288px;
+			height: 295px;
+			overflow: hidden;
+		}
+		.safe_top img{	
+			transition:all 1s;
+		}
+		.safe_top img:hover{	
+			transform: scale(1.1,1.1);		
+		}
+		.txt{	
+		    width: 100%;
+		    height: 96px;
+		    overflow: hidden;
+		}	
+		.txt_bottom{		
+			float: left;	
+			 margin-left: 56px;
+		    margin-top: 27px;
+		}
+		.txt h2{	
+		    float: left;
+		    line-height: 102px;
+		    padding-left: 14px;
+		}
+		.part1{	
+		    height: 1010px;
+		    width: 1200px;
+		    margin: 0 auto;
+		    margin-top: 223px;
+		    overflow: hidden;
+		}
+		.tittle1{	
+		    width: 240px;
+		    height: 60px;
+		    background: url(img/que1.png);
+		    background-size: cover;
+		    /* padding-top: 40px; */
+		    margin-top: 20px;
+		}
+		.trouble,.trouble1,.trouble2,.trouble3{	
+		    background: url(img/person.png);
+		    width: 680px;
+		    height: 197px;
+		    background-size: cover;
+		    margin: 0 auto;
+		    margin-top: 28px;
+		}
+		.trouble1{
+			background: url(img/school.png);	
+		    width: 680px;
+		    height: 197px;
+		    background-size: cover;			
+			margin:0 auto;
+			margin-top: 28px;					
+		}
+		.trouble2{
+			background: url(img/afterclass.png);		
+		    width: 680px;
+		    height: 197px;	
+		    background-size: cover;			
+			margin:0 auto;
+			margin-top: 28px;					
+		}		
+		.trouble3{
+			background: url(img/sport.png);	
+		    width: 680px;
+		    height: 197px;	
+		    background-size: cover;			
+			margin:0 auto;
+			margin-top: 28px;						
+		}		
+		.trouble:hover{	
+			  box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    			  transform: translate3d(0,-2px,0);
+		}	
+		.trouble1:hover{	
+			  box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    			  transform: translate3d(0,-2px,0);
+		}
+		.trouble2:hover{	
+			  box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    			  transform: translate3d(0,-2px,0);
+		}								
+		.trouble3:hover{	
+			  box-shadow: 0 4px 15px rgba(0,0,0,.25);
+    			  transform: translate3d(0,-2px,0);
+		}	
+		.part2{	
+		    height: 400px;
+		    width: 100%;
+		    background: #c6cbd0;
+		}	
+		.part2 .inbox{	
+			height: 400px;
+			width: 1360px;			
+			margin:0 auto;
+			background: url(img/eistudy.png) no-repeat;
+			background-size: cover;		
+		}
+		.teshu{	
+			margin:0 auto;
+			display: block;
+		}
+		.part3{	
+			width: 100%;
+			height: 3072px;
+			background: #7ec9fe;
+		}
+		.becenter{	
+			width: 1200px;
+			height: 4012px;
+			margin:0 auto;
+			overflow: hidden;
+		}
+		.tittle2{	
+		    width: 309px;
+		    height: 60px;
+		    background: url(img/que2.png);
+		    background-size: cover;
+		    /* padding-top: 40px; */
+		    margin-top: 40px;	
+		}
+		.shuoming{
+		    margin: 0 auto;
+		    width: 785px;
+		    height: 383px;
+		    margin-top: 30px;
+		    background: url(img/shuoming.png) no-repeat;
+		    background-size: contain;				
+		}
+		.tittle3{	
+		    width: 400px;
+		    height: 60px;
+		    background: url(img/que3.png);
+		    background-size: cover;
+		    /* padding-top: 40px; */
+		    margin-top: 10px;
+		}		
+		.fuwu{	
+			width: 785px;
+		    height: 879px;
+		    margin: 0 auto;
+		    margin-top: 30px;
+		    background: url(img/fuwu.png) no-repeat;
+		    background-size: contain;
+		}
+		.tittle4{	
+		    width: 272px;
+		    height: 60px;
+		    background: url(img/que4.png);
+		    background-size: cover;
+		    /* padding-top: 40px; */
+		    margin-top: 40px;
+		}	
+		.feiyong1,.feiyong2,.feiyong3{	
+			width: 811px;
+			height: 436px;
+			margin:0 auto;
+			margin-top: 40px;
+		}	
+		.feiyong1 img{	
+			display: block;
+			margin:0 auto;
+		}	
+		.feiyong2 img{	
+			display: block;
+			margin:0 auto;
+		}
+		.feiyong3 img{	
+			display: block;
+			margin:0 auto;
+		}					
+		.part4{
+			height: 936px;
+			width: 100%;
+		}	
+		.tobecenter{	
+			height: 1033px;
+			width: 1200px;
+			margin:0 auto;
+		}
+		.tittle5{	
+		    width: 338px;
+		    height: 60px;
+		    background: url(img/que5.png);
+		    background-size: cover;
+		    /* padding-top: 40px; */
+		    margin-top: 40px;
+		}	
+		.more{	
+			width: 1026px;
+			height: 62px;
+			margin:0 auto;
+			margin-top: 30px;
+		}	
+		.lastc{	
+			width: 1028px;
+			height: 724px;
+			margin:0 auto;
+			margin-top: 30px;
+		}	
+		.lastc img:nth-of-type(1){	
+			float: left;		
+		}	
+		.lastc img:nth-of-type(1){	
+			float: right;	
+		}	
+		footer{	
+			width: 100%;
+			height: 157px;
+			background: #7ec9fe;
+		}	
+		.fot{	
+			width: 1200px;
+			height: 157px;
+			margin:0 auto;
+		}	
+		.weizhi{	
+		    float: left;
+		    margin-top: 54px;
+		    margin-left: 21px;
+		}	
+		.phone{	
+			float: left;
+			margin-top: 50px;
+			margin-left: 20px;	
+			margin-right: 10px;
+		}
+		.fot h3{	
+			color: white;
+		    font-size: 32px;
+		    line-height: 152px;
+		    margin-left: 16px;
+		    display: block;
+		}
+		.hite{	
+			width: 50px;
+			height: 50px;
+			border-radius:50% 50%;
+			cursor: pointer;
+			display: block;
+			margin-top: 511px;
+			margin-left: 681px;
+			background: url(img/gengduo.png) no-repeat center center rgba(0,0,0,0.5);
+			cursor: pointer;
+		}
+		.hite:hover{		
+			background: url(img/gengduo.png) no-repeat center center #fad03e;		
+		}
+		.box01{	
+			width: 40px;
+			height: 40px;
+			background: url(img/gengduo.png) no-repeat center  center;
+			background-size: 34%;
+			background-color: #fbd127;
+			margin-top: 580px;
+			border-radius:50% 50%;
+			margin-left: 368px;
+		}
+		.box01:hover{	
+			background-color:rgba(0,0,0,.6);
+		}
+		.box02{	
+			width: 500px;
+			height: 30px;
+			margin:0 auto;
+			margin-top:47px;
+		}
+</style>
 <script>
-    $(function(){
-        $('#layui-m-layer0').hide();
-    })
+$(function(){
+	
+	$(".shuoming").click(function(){
+		$(".shuoming").addClass("animated shake");
+		setTimeout(function(){
+			// alert("登录失败！");
+			// $(".login").removeClass("shake").addClass("bounceOut");
+		},1000);
+	});
+		
+});	
 </script>
-
+</head>
+<body>
+	<header>
+		<div class="center ">
+			<a href="https://oshcaustralia.com.au/zh-CN"><div class="box01"></div></a>
+			<div class="box02 animated rubberBand"><img src="img/keepsafe.png" width=500px alt=""></div>
+		</div>
+	</header>
+	<section >
+		<div class="box1">
+			<div class="allsafe">
+				<div class="safe1">
+					<div class="safe_top">
+						<img src="img/pic1.png" alt="" />
+					</div>
+					<div class="txt" >
+						<div class="txt_bottom" ><img src="img/hospital.png" alt=""  /></div>
+						<h2>医院保险</h2>
+					</div>
+				</div>
+				<div class="safe2">
+					<div class="safe_top">
+						<img src="img/pic2.png" alt="" />
+					</div>
+					<div class="txt">
+						<div class="txt_bottom"><img src="img/yao.png" alt="" /></div>
+						<h2>药品保险</h2>
+					</div>
+				</div>
+				<div class="safe3">
+					<div class="safe_top">
+						<img src="img/pic3.png" alt="" />
+					</div>
+					<div class="txt">
+						<div class="txt_bottom"><img src="img/car.png" alt="" /></div>
+						<h2>救护车保险</h2>
+					</div>
+				</div>	
+				<div class="safe4">
+					<div class="safe_top">
+						<img src="img/pic4.png" alt="" />
+					</div>
+					<div class="txt">
+						<div class="txt_bottom"><img src="img/zhiliao.png" alt="" /></div>
+						<h2>医疗服务保险</h2>
+					</div>
+				</div>				
+			</div>
+		</div>
+		<div class="part1">
+			<div class="tittle1"></div>
+			<div class="trouble"></div>
+			<div class="trouble1"></div>			
+			<div class="trouble2"></div>		
+			<div class="trouble3"></div>
+		</div>
+		<div class="part2">
+			<div class="inbox"></div>
+		</div>
+		<div class="part3">
+			<div class="becenter">
+				<div class="tittle2">
+				</div>
+				<div class="shuoming "></div>
+				<div class="tittle3"></div>
+				<div class="fuwu"></div>
+				<div class="tittle4"></div>				
+				<div class="feiyong1"><img src="img/img1.png" alt=""  width=580px/></div>	
+				<div class="feiyong2"><img src="img/img2.png" alt=""  width=580px/></div>					
+				<div class="feiyong3"><img src="img/img3.png" alt=""  width=580px/></div>					
+			</div>
+			
+		</div>
+		<div class="part4">
+			<div class="tobecenter">
+				<div class="tittle5"></div>
+				<div class="more"><img src="img/more.png" alt="" /></div>
+				<div class="lastc">
+					<img src="img/no.png" alt="" />
+					<img src="img/fujia.png" alt="" />					
+				</div>
+			</div>
+		</div>
+	</section>
+	<footer>
+		<div class="fot">
+			<img src="img/huhan.png" alt=""  class="weizhi"/>
+			<img src="img/phone.png" alt=""  class="phone"/>
+			<h3>400-716-0816</h3>
+		</div>
+	</footer>
+</body>
 </html>
